@@ -1,26 +1,26 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import authRoutes from "./routes/authentication_routes.js";
-import roleRoutes from "./routes/role_routes.js";
-import userRoleRoutes from "./routes/user_role_routes.js";
-import {dbConfig} from "./config/db.js";
-import uomRoutes from "./routes/uom_routes.js";
-import itemRoutes from "./routes/item_routes.js";
-import vendorRoutes from "./routes/vendor_routes.js";
-import invoiceRoutes from "./routes/invoice_routes.js";
-import inventoryRoutes from "./routes/inventory_routes.js";
-import csvRoutes from "./routes/csv_routes.js";
-import swaggerOptions from "./middlewares/swagger_options.js";
-import dailyConsumptionRoutes from './routes/dailyConsumption_routes.js';
-import consumptionDaysRoutes from './routes/consumptionDays_routes.js';
-import categoryRoutes from './routes/recipe_category_routes.js'
-import recipeRoutes from './routes/recipe_routes.js'
-import ingredientRoutes from './routes/recipe_ingredient_routes.js'
-import mediaRoutes from './routes/recipe_media_routes.js'
+import authRoutes from "../routes/authentication_routes.js";
+import roleRoutes from "../routes/role_routes.js";
+import userRoleRoutes from "../routes/user_role_routes.js";
+import {dbConfig} from "../config/db.js";
+import uomRoutes from "../routes/uom_routes.js";
+import itemRoutes from "../routes/item_routes.js";
+import vendorRoutes from "../routes/vendor_routes.js";
+import invoiceRoutes from "../routes/invoice_routes.js";
+import inventoryRoutes from "../routes/inventory_routes.js";
+import csvRoutes from "../routes/csv_routes.js";
+import swaggerOptions from "../middlewares/swagger_options.js";
+import dailyConsumptionRoutes from '../routes/dailyConsumption_routes.js';
+import consumptionDaysRoutes from '../routes/consumptionDays_routes.js';
+import categoryRoutes from '../routes/recipe_category_routes.js'
+import recipeRoutes from '../routes/recipe_routes.js'
+import ingredientRoutes from '../routes/recipe_ingredient_routes.js'
+import mediaRoutes from '../routes/recipe_media_routes.js'
 import swaggerJsDoc from 'swagger-jsdoc';
 import swaggerUi from "swagger-ui-express";
 import cors from "cors";
-import { addRolesInitially, addUomsInitially } from './middlewares/initial_database.js';
+import { addRolesInitially, addUomsInitially } from '../middlewares/initial_database.js';
 
 
 dotenv.config();
